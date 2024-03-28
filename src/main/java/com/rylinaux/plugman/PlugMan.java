@@ -225,15 +225,6 @@ public class PlugMan extends JavaPlugin {
             this.pluginUtil = new BukkitPluginUtil();
         }
 
-        if (this.pluginUtil instanceof PaperPluginUtil) {
-            Bukkit.getLogger().warning("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            Bukkit.getLogger().warning("It seems like you're running on paper.");
-            Bukkit.getLogger().warning("PlugManX cannot interact with paper-plugins, yet.");
-            Bukkit.getLogger().warning("Also, if you encounter any issues, please join my discord: https://discord.gg/GxEFhVY6ff");
-            Bukkit.getLogger().warning("Or create an issue on GitHub: https://github.com/TheBlackEntity/PlugMan");
-            Bukkit.getLogger().warning("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        }
-
         PlugMan.instance = this;
 
         File messagesFile = new File(getDataFolder(), "messages.yml");
